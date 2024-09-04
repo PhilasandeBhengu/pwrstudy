@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PwrStudy | My dashboard</title>
+    <link rel="stylesheet" href="/styles/dashboard.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">PwrStudy</div>
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Subjects</a></li>
+          <li><a href="#">Progress</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="welcome-section">
+        <h1 id="welcome-message">Welcome, User</h1>
+        <p>Your study journey starts here. Let's make the most of your time!</p>
+      </section>
+
+      <section class="card">
+        <h2>Total Study Hours</h2>
+        <p id="study-hours">0 Hours</p>
+      </section>
+
+      <section class="graph">
+        <h2>Subject-wise Performance</h2>
+        <canvas id="subject-performance-chart"></canvas>
+      </section>
+
+      <section class="graph">
+        <h2>Topic Mastery</h2>
+        <canvas id="topic-mastery-chart"></canvas>
+      </section>
+
+      <section class="graph">
+        <h2>Study Time vs. Scores</h2>
+        <canvas id="study-time-score-chart"></canvas>
+      </section>
+
+      <!-- Add more sections as needed -->
+    </main>
+
+    <footer>
+      <p>&copy; 2024 PwrStudy. All rights reserved.</p>
+    </footer>
+  </body>
+
+  <script type="module" src="/scripts/dashboard.js"></script>
+</html>
