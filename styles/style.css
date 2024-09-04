@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.banner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.banner h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.banner p {
+  font-size: 1.5em;
+}
+
+.cta-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #28a745;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #218838;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about,
+.features,
+.cta {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+.features {
+  padding-top: 20px;
+}
+
+.feature {
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.8em;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 1em;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2.5em;
+  }
+
+  .banner p {
+    font-size: 1.2em;
+  }
+
+  .cta-button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-button {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+  }
+}
